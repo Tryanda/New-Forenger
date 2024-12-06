@@ -8,13 +8,13 @@
 script = ExtResource("1_nj81x")
 
 [node name="run" type="TouchScreenButton" parent="."]
-position = Vector2(87, 91)
+position = Vector2(147, 167)
 scale = Vector2(0.25, 0.25)
 texture_normal = ExtResource("1_ci2wd")
 action = "run"
 
 [node name="jump" type="TouchScreenButton" parent="."]
-position = Vector2(937, 425)
+position = Vector2(1493, 813)
 scale = Vector2(0.25, 0.25)
 texture_normal = ExtResource("2_h7gel")
 action = "jump"
