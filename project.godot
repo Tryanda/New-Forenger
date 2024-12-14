@@ -12,9 +12,10 @@ config_version=5
 
 config/name="Forenger"
 config/version="1.0"
-run/main_scene="res://main.tscn"
+run/main_scene="res://menu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://textures/logoapk.png"
+boot_splash/minimum_display_time=3000
 
 [autoload]
 
