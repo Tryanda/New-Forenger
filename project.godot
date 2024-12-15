@@ -14,6 +14,10 @@ config/name="Forenger"
 config/version="1.0"
 run/main_scene="res://menu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/image="res://icon/apkicon.png"
+boot_splash/fullsize=false
+boot_splash/use_filter=false
 config/icon="res://textures/logoapk.png"
 boot_splash/minimum_display_time=3000
 
