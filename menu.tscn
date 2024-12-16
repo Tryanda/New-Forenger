@@ -3536,14 +3536,22 @@ spring_length = 1.4
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.547518, 2.10469, -2.56964)
 current = true
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="tchscrnbtn" type="CanvasLayer" parent="."]
 
-[node name="TouchScreenButton" type="TouchScreenButton" parent="CanvasLayer"]
+[node name="TouchScreenButton" type="TouchScreenButton" parent="tchscrnbtn"]
 position = Vector2(1.35525e-20, 970)
 scale = Vector2(1.03111, 0.890623)
 texture_normal = ExtResource("5_gksqm")
 texture_pressed = ExtResource("6_a7ukb")
 script = ExtResource("7_jqswq")
+
+[node name="quitbtn" type="Button" parent="tchscrnbtn"]
+offset_left = 1750.0
+offset_top = 15.0
+offset_right = 1907.0
+offset_bottom = 85.0
+theme_override_font_sizes/font_size = 31
+text = "Quit"
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.98396, 4.05191)
@@ -3552,4 +3560,5 @@ texture = ExtResource("4_aw685")
 [node name="SpotLight3D" type="SpotLight3D" parent="."]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 1.56659, -3.77205)
 
-[connection signal="pressed" from="CanvasLayer/TouchScreenButton" to="CanvasLayer/TouchScreenButton" method="_on_pressed"]
+[connection signal="pressed" from="tchscrnbtn/TouchScreenButton" to="tchscrnbtn/TouchScreenButton" method="_on_pressed"]
+[connection signal="pressed" from="tchscrnbtn/quitbtn" to="karakter" method="_on_quitbtn_pressed"]
